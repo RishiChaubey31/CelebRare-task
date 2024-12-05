@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    height: 10%;
+    width: 200%;
+    background:linear-gradient(135deg, black, white, black);
+    border:2px solid black;  
+    
+  }
+
+  #Logo{
+    height: 100%;
+    width: 10%;
+    filter: drop-shadow(30px 10px 4px #aeaed2);
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(135deg, #59C173, #a17fe0, #5D26C1);
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 9 / 16;
+    width: 20%;
+    background-color: transparent;
+    border: 10px solid rgb(62, 37, 25);
+    margin-right: 5rem;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .text-editor {
+    display: flex;
+    flex-direction: column; /* Ensure controls stack vertically */
+    align-items: flex-start; /* Align items to the start for better readability */
+    justify-content: flex-start; /* Align content to the top */
+    gap: 15px; /* Add spacing between controls */
+    padding: 20px; /* Add padding inside the container */
+    width: 32%;
+    height: auto; /* Adjust height to fit content */
+    background-color: rgb(73, 80, 73);
+    border: 5px solid rgb(62, 37, 25);
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    border-radius: 10px; /* Add rounded corners */
+    color: white;
+    font-weight: bolder;
+}
+
+/* Style adjustments for child elements within .text-editor */
+.text-editor select,
+.text-editor input[type="text"],
+.text-editor input[type="range"],
+.text-editor button {
+    width: 100%; /* Ensure child elements span the full width */
+    max-width: 90%; /* Set a reasonable max width */
+    margin: 5px 0; /* Add spacing between elements */
+}
+
+/* Style individual buttons for a consistent look */
+.text-editor button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+.text-editor button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Add spacing and alignment for the color palette */
+.palette-container {
+    margin-top: 15px; /* Add spacing above the palette */
+    width: 100%; /* Make it responsive */
+}
+  
+  #font-select {
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    
+  }
+ 
+  .palette-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  @keyframes swatchPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  .color-swatch {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .color-swatch:hover {
+    border-color: #333;
+    animation: swatchPulse 0.3s ease;
+  }
+  
+  .color-swatch:active {
+    border-color: #000;
+    transform: scale(0.95);
+  }
+  
+  #text-input{
+    height: 35px;
+    
+    padding-bottom: 0%;
+  }
+  
+  #add-text{
+    height: 2.9rem;
+    padding-bottom: 0%;
+  }
+  
+
+  footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    margin-bottom: 0%;
+  }

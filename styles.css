@@ -1,10 +1,10 @@
 :root {
-  --primary-gradient: linear-gradient(135deg, #59C173, #a17fe0, #5D26C1);
+  --primary-gradient: linear-gradient(135deg, #59c173, #a17fe0, #5d26c1);
   --header-gradient: linear-gradient(135deg, #1a1a1a, #4a4a4a, #1a1a1a);
- 
+
   --text-color-dark: #2c2c2c;
   --background-card: rgba(73, 80, 73, 0.9);
-  --accent-color: #4CAF50;
+  --accent-color: #4caf50;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color-light);
   background: var(--primary-gradient);
@@ -126,13 +126,18 @@ main {
   background-color: #45a049;
   transform: translateY(-2px);
 }
-h1{
-   font-size: 48px; /* Adjust as needed */
-            font-weight: bold;
-            background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1); /* Define gradient */
-            -webkit-background-clip: text; /* Clip gradient to text */
-            -webkit-text-fill-color: transparent; /* Make text fill transparent */
-            text-align: center; /* Optional: Center align the text */
+h1 {
+  font-size: 48px; /* Adjust as needed */
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #59c173,
+    #a17fe0,
+    #5d26c1
+  ); /* Define gradient */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make text fill transparent */
+  text-align: center; /* Optional: Center align the text */
 }
 
 .text-editor button:active {
@@ -195,7 +200,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     padding: 1rem;
   }
@@ -211,5 +216,18 @@ footer {
 
   .text-editor {
     padding: 1rem;
+  }
+  h1 {
+    font-size: 29px; /* Adjust as needed */
+    font-weight: bold;
+    background: linear-gradient(
+      to right,
+      #59c173,
+      #a17fe0,
+      #5d26c1
+    ); /* Define gradient */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+    text-align: center; /* Optional: Center align the text */
   }
 }
